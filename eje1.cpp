@@ -12,7 +12,7 @@ int main() {
     }
     int* max = &lista[0]; // inicializar el apuntador a la primera posición de la lista
     int* min = &lista[0];
-    for (int i = 1; i < n; i++) { // comenzar en la posición 1 de la lista
+    for (int i = 1; i < n; i++) { 
         if (lista[i] > *max) { // comparar los valores apuntados, no los apuntadores
             max = &lista[i]; // actualizar el apuntador al valor máximo
         }
@@ -24,7 +24,7 @@ int main() {
     int &Valor_Min=*min;
 
     int x;
-    cout << "El numero mas grande de la lista es: " << Valor_Max << endl; // desreferenciar los apuntadores para obtener los valores
+    cout << "El numero mas grande de la lista es: " << Valor_Max << endl; 
     cout << "El numero mas pequeño de la lista es: " << Valor_Min << endl;
     cout <<"Ingresa un numero que este en el rango"<<endl;
     cin>>x;

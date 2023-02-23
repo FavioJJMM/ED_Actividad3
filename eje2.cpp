@@ -23,7 +23,7 @@ int Menu() {
     cin>>respuesta;
     return respuesta;
 }
-
+//Inicializar el vector llamaado estudiantes que contiene objetos del tipo Estudiante
 vector<Estudiante> estudiantes;
 void agregarEstudiante() {
     Estudiante estudiante;
@@ -67,7 +67,6 @@ void actualizarCalificacion() {
             cin >> calif;
             cout << "La calificación del estudiante " << estudiante.nombre << " ha sido actualizada." << endl;
             encontrado = true;
-            //break;
         }
     }
 
